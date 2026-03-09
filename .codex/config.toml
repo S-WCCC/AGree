@@ -1,0 +1,23 @@
+﻿[features]
+multi_agent = true
+
+
+[agents.literature-reviewer]
+description = "Use when surveying papers, comparing methods, extracting evidence, or building a structured literature review for a research task."
+config_file = "agents/literature-reviewer.toml"
+
+[agents.experiment-runner]
+description = "Use when planning, running, reproducing, or auditing experiments, including environment capture, parameter tracking, and result logging."
+config_file = "agents/experiment-runner.toml"
+
+[agents.research-reporter]
+description = "Use when synthesizing findings into a research report, experiment summary, comparison table, or evidence-backed conclusion with explicit limitations."
+config_file = "agents/research-reporter.toml"
+
+[agents.chemical-echo]
+description = "Use when you want a minimal test agent to echo and normalize a chemical record into a short structured summary for routing verification."
+config_file = "agents/chemical-echo.toml"
+
+[agents.category-echo]
+description = "Use when you want a minimal test agent to read a chemical functional category and return a short category-focused summary for routing verification."
+config_file = "agents/category-echo.toml"
